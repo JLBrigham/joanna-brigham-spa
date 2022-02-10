@@ -1,4 +1,5 @@
-import Navbar from "../components/navbar/navbar.js";
+import { HashRouter, Switch, Route } from "react-router-dom";
+import Navbar from "../components/navbar/Navbar.js";
 
 function Main() {
   return (

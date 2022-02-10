@@ -1,24 +1,25 @@
 function Navbar() {
   return (
     <div className="navbar">
+      <h1>Joanna Brigham</h1>
       <ul>
         <li>
-          <a href="/">Joanna Brigham</a>
+          <a href="/">about</a>
         </li>
         <li>
-          <a href="/skills">Skills</a>
+          <a href="/skills">skills</a>
         </li>
         <li>
-          <a href="/projects">Projects</a>
+          <a href="/projects">projects</a>
         </li>
         <li>
-          <a href="/experience">Experience</a>
+          <a href="/experience">experience</a>
         </li>
         <li>
-          <a href="/blog">Blog</a>
+          <a href="/blog">blog</a>
         </li>
         <li>
-          <a href="/hobbies">Hobbies</a>
+          <a href="/hobbies">hobbies</a>
         </li>
       </ul>
     </div>
