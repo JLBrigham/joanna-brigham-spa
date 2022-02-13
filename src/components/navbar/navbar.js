@@ -1,30 +1,42 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
 
 function Navbar() {
+  setInterval(updateTime, 1000);
+
+  const now = new Date().toLocaleTimeString();
+
+  const [time, setTime] = useState(now);
+
+  function updateTime() {
+    const newTime = new Date().toLocaleTimeString();
+    setTime(newTime);
+  }
   return (
     <div className="navbar">
       <h1>Joanna Brigham</h1>
       <ul>
         <li>
-          <Link exact to="/">
+          <NavLink exact to="/">
             about
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/skills">skills</Link>
+          <NavLink to="/skills">skills</NavLink>
         </li>
         <li>
-          <Link to="/projects">projects</Link>
+          <NavLink to="/projects">projects</NavLink>
         </li>
         <li>
-          <Link to="/experience">experience</Link>
+          <NavLink to="/experience">experience</NavLink>
         </li>
         <li>
-          <Link to="/blog">blog</Link>
+          <NavLink to="/blog">blog</NavLink>
         </li>
         <li>
-          <Link to="/hobbies">hobbies</Link>
+          <NavLink to="/hobbies">hobbies</NavLink>
         </li>
+        <li>{time}</li>
       </ul>
     </div>
   );
