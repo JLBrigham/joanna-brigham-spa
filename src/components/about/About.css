@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Julius+Sans+One&family=Raleway:wght@300&display=swap");
+
+.profile-pic {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.intro-para {
+  height: fit-content;
+  width: 400px;
+  font-family: "Raleway", sans-serif;
+  line-height: 140%;
+  color: #045762;
+  /* color: #496772; */
+  margin-left: 100px;
+  white-space: pre-wrap;
+  font-size: 1.2vw;
+}
+
+.about-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,7 +1,8 @@
 body,
 html {
   margin: 0;
-  background-color: #f3f2da;
+  /* background-color: #f3f2da; */
+  background-color: #fbf8f1;
   /* height: 100%; */
 }
 
@@ -12,8 +13,8 @@ html {
 }
 
 .content {
-  height: 100vh;
-  flex: 1;
+  height: 100%;
+  width: 90%;
   /* float: right; */
   display: flex;
   align-items: center;
@@ -22,8 +23,9 @@ html {
 
 .content-container {
   height: 70vh;
-  background-color: #f3f2da;
+  background-color: #fbf8f1;
   width: 60vw;
   border: 8px solid #ea97ad;
   padding: 20px;
+  overflow: hidden;
 }
