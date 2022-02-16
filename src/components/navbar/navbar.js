@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
+import "./Navbar.css";
 
 function Navbar() {
   setInterval(updateTime, 1000);
@@ -14,29 +15,39 @@ function Navbar() {
   }
   return (
     <div className="navbar">
-      <h1>Joanna Brigham</h1>
-      <ul>
-        <li>
-          <NavLink exact to="/">
+      <h2 className="name-header">Joanna Brigham</h2>
+      <ul className="navlink-list">
+        <li className="navbar-item">
+          <NavLink className="navbar-link" exact to="/">
             about
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/skills">skills</NavLink>
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to="/skills">
+            skills
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="/projects">projects</NavLink>
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to="/projects">
+            projects
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="/experience">experience</NavLink>
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to="/experience">
+            experience
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="/blog">blog</NavLink>
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to="/blog">
+            blog
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="/hobbies">hobbies</NavLink>
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to="/hobbies">
+            hobbies
+          </NavLink>
         </li>
-        <li>{time}</li>
+        <li className="navbar-item">{time}</li>
       </ul>
     </div>
   );

@@ -6,14 +6,16 @@ import "./Main.css";
 
 function Main() {
   return (
-    <div>
+    <div className="main-container">
       <Navbar></Navbar>
       <div className="content">
-        <Routes>
-          <Route path="/" element={<About />} />
+        <div className="content-container">
+          <Routes>
+            <Route path="/" element={<About />} />
 
-          <Route path="/skills" element={<Skills />} />
-        </Routes>
+            <Route path="/skills" element={<Skills />} />
+          </Routes>
+        </div>
       </div>
     </div>
   );

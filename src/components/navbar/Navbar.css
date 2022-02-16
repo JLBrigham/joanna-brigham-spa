@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Julius+Sans+One&family=Raleway:wght@300&display=swap");
+
+.navbar {
+  background-color: #045762;
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.name-header {
+  font-family: "Julius Sans One", sans-serif;
+  width: 100%;
+  position: relative;
+  color: #ea97ad;
+}
+
+.navlink-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 80%;
+  color: #f3f2da;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: #f3f2da;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #f3f2da;
+}
