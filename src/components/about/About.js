@@ -1,16 +1,15 @@
 import React from "react";
 
-function About() {
+function About(props) {
   return (
-    <div>
-      <h1>About</h1>
-      <p>
-        Cras facilisis urna ornare ex volutpat, et convallis erat elementum. Ut
-        aliquam, ipsum vitae gravida suscipit, metus dui bibendum est, eget
-        rhoncus nibh metus nec massa. Maecenas hendrerit laoreet augue nec
-        molestie. Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus.
-      </p>
+    <div id="about" className="about">
+      <div className="name-container">
+        <h1 className="my-name">{props.name}</h1>
+      </div>
+      <div className="about-contents">
+        <img className="profile-pic" src={props.img} alt="avatar_img" />
+        <p className="intro-para">{props.intro}</p>
+      </div>
     </div>
   );
 }
