@@ -18,32 +18,53 @@ function Navbar() {
       <h2 className="name-header">Joanna Brigham</h2>
       <ul className="navlink-list">
         <li className="navbar-item">
-          <NavLink className="navbar-link" exact to="/">
+          <NavLink
+            className="navbar-link"
+            exact
+            activeClassName="active"
+            to="/"
+          >
             about
           </NavLink>
         </li>
         <li className="navbar-item">
-          <NavLink className="navbar-link" to="/skills">
+          <NavLink
+            className="navbar-link"
+            activeClassName="active"
+            to="/skills"
+          >
             skills
           </NavLink>
         </li>
         <li className="navbar-item">
-          <NavLink className="navbar-link" to="/projects">
+          <NavLink
+            className="navbar-link"
+            activeClassName="active"
+            to="/projects"
+          >
             projects
           </NavLink>
         </li>
         <li className="navbar-item">
-          <NavLink className="navbar-link" to="/experience">
+          <NavLink
+            className="navbar-link"
+            activeClassName="active"
+            to="/experience"
+          >
             experience
           </NavLink>
         </li>
         <li className="navbar-item">
-          <NavLink className="navbar-link" to="/blog">
+          <NavLink className="navbar-link" activeClassName="active" to="/blog">
             blog
           </NavLink>
         </li>
         <li className="navbar-item">
-          <NavLink className="navbar-link" to="/hobbies">
+          <NavLink
+            className="navbar-link"
+            activeClassName="active"
+            to="/hobbies"
+          >
             hobbies
           </NavLink>
         </li>

@@ -27,15 +27,24 @@
   justify-content: space-around;
   align-items: stretch;
   height: 80%;
-  color: #f3f2da;
+  color: #fbf8f1;
 }
 
 .navbar-item {
   text-decoration: none;
-  color: #f3f2da;
+  color: #fbf8f1;
 }
 
 .navbar-link {
   text-decoration: none;
-  color: #f3f2da;
+  color: #fbf8f1;
+}
+
+.active {
+  background-color: #fbf8f1;
+  color: #045762;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
